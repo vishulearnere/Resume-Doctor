@@ -50,11 +50,12 @@
 ## Screenshots
 
 ## Admin Side
+[admin_video (1).webm](https://user-images.githubusercontent.com/63242162/194629070-db69e862-a055-4e63-a1bc-dd4a88ea52bd.webm)
 
-<img src="https://github.com/vishulearner/resume_doctor/blob/master/Logo/SRA_Logo.png">
 
 ## User side
+[user_video (1).webm](https://user-images.githubusercontent.com/63242162/194629469-e1505d53-ca68-4915-92f3-f095caad7ba7.webm)
 
-<img src="https://github.com/vishulearner/resume_doctor/blob/master/Logo/SRA_Logo.png">
 
-## can we use open source 
+
+## All the Images, Media, Content and Code  are  __Copyright Protected__ and need my permission for further use.
