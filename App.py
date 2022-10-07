@@ -1,3 +1,5 @@
+import nltk
+nltk.download('stopwords')
 from Courses import ds_course, web_course, android_course, ios_course, uiux_course, resume_videos, interview_videos
 import os
 import io
@@ -19,32 +21,16 @@ from pdfminer3.layout import LAParams, LTTextBox
 from pyresparser import ResumeParser
 import pandas as pd
 import streamlit as st
-import nltk
-nltk.download('stopwords')
 #from streamlit.web.cli import main
 #import pafy
 
 # From here to
-
-
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-
-try:
-    import pafy
-
-except Exception as error:
-    print("Error: ", error)
-    install("git+https://github.com/mps-youtube/pafy.git")
-    import pafy
-# here
 # Just to resolve youtube-dl issue on cloud
 
 # def fetch_yt_video(link):
-#    video = pafy.new(link)
+#    video =.new(link)
 #    return video.title
-
+# here
 
 def footer(p):
     style = """
