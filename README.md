@@ -2,8 +2,9 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)  
 [![Python 3.8|3.9](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://key-up.streamlitapp.com)
 
-<img src="https://github.com/vishulearner/resume_doctor/blob/master/Logo/SRA_Logo.png">
+<img src="https://raw.githubusercontent.com/vishulearnere/Resume-Doctor/main/SRA_Logo.png">
 
 ## Source
 
