@@ -47,7 +47,6 @@
 - `Courses.py` is the Python file that contains courses and youtube video 
 - `Uploaded_Resumes` folder is contaning the user's uploaded resumes.
 
-## Screenshots
 
 ## Admin Side
 [admin_video (1).webm](https://user-images.githubusercontent.com/63242162/194629070-db69e862-a055-4e63-a1bc-dd4a88ea52bd.webm)
