@@ -335,7 +335,7 @@ def run():
                 # Resume writing recommendation
                 st.subheader("**Resume Tips & Ideas💡**")
                 resume_score = 0
-                if 'skills' in resume_text:
+                if 'skills' or 'SKILLS' in resume_text:
                     resume_score = resume_score+20
 
                 if 'Objective' in resume_text:
@@ -360,7 +360,7 @@ def run():
                     st.markdown(
                         '''<h4 style='text-align: left; color: #fabc10;'>[-] According to our recommendation please add Hobbies⚽. It will show your persnality to the Recruiters and give the assurance that you are fit for this role or not.</h4>''', unsafe_allow_html=True)
 
-                if 'Achievements' in resume_text:
+                if 'Achievements' or 'ACHIEVEMENTS' in resume_text:
                     resume_score = resume_score + 20
                     st.markdown(
                         '''<h4 style='text-align: left; color: #1ed760;'>[+] Awesome! You have added your Achievements🏅 </h4>''', unsafe_allow_html=True)
@@ -368,7 +368,7 @@ def run():
                     st.markdown(
                         '''<h4 style='text-align: left; color: #fabc10;'>[-] According to our recommendation please add Achievements🏅. It will show that you are capable for the required position.</h4>''', unsafe_allow_html=True)
 
-                if 'Projects' in resume_text:
+                if 'Projects' or 'PROJECTS' in resume_text:
                     resume_score = resume_score + 20
                     st.markdown(
                         '''<h4 style='text-align: left; color: #1ed760;'>[+] Awesome! You have added your Projects👨‍💻 </h4>''', unsafe_allow_html=True)
