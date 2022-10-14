@@ -352,7 +352,7 @@ def run():
                 # else:
                 #    st.markdown('''<h4 style='text-align: left; color: #fabc10;'>[-] According to our recommendation please add Declaration✍. It will give the assurance that everything written on your resume is true and fully acknowledged by you</h4>''',unsafe_allow_html=True)
 
-                if 'Hobbies' or 'Interests' in resume_text:
+                if 'Hobbies'  in resume_text:
                     resume_score = resume_score + 20
                     st.markdown(
                         '''<h4 style='text-align: left; color: #1ed760;'>[+] Awesome! You have added your Hobbies⚽</h4>''', unsafe_allow_html=True)
