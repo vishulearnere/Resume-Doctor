@@ -453,7 +453,9 @@ def run():
                 # Admin Side Data
                 query = 'select * from user_data;'
                 plot_data = pd.read_sql(query, connection)
+                print(plot_data)
                 plot_data = pd.DataFrame(data)
+                print(plot_data)
 
                 # Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
