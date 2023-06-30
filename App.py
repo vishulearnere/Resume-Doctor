@@ -459,9 +459,9 @@ def run():
 
                 # Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
-                print(labels)
+                st.write(labels)
                 values = plot_data.Predicted_Field.value_counts()
-                print(values)
+                st.write(values)
                 st.subheader(
                     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
                 fig = px.pie(plot_data, values=values, names=labels,
