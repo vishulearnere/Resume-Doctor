@@ -464,7 +464,7 @@ def run():
                 print(values)
                 st.subheader(
                     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
-                fig = px.pie(df, values=values, names=labels,
+                fig = px.pie(plot_data, values=values, names=labels,
                              title='Predicted Field 🎓 according to the Skills')
                 st.plotly_chart(fig)
 
