@@ -461,6 +461,7 @@ def run():
                 labels = plot_data.Predicted_Field.unique()
                 st.write(labels)
                 values = plot_data.Predicted_Field.value_counts()
+                values=values['count']
                 st.write(values)
                 st.subheader(
                     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
