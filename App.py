@@ -454,8 +454,8 @@ def run():
                 query = 'select * from user_data;'
                 plot_data = pd.read_sql(query, connection)
                 st.write(plot_data)
-                plot_data = pd.DataFrame(data)
-                st.write(plot_data)
+                # plot_data = pd.DataFrame(data)
+                # st.write(plot_data)
 
                 # Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
