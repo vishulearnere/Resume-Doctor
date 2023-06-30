@@ -457,7 +457,7 @@ def run():
                 # plot_data = pd.DataFrame(data)
                 # st.write(plot_data)
 
-                Pie chart for predicted field recommendations
+                #Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
                 st.write(labels)
                 values = plot_data.Predicted_Field.value_counts()
