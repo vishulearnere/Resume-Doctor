@@ -451,9 +451,9 @@ def run():
                     df, 'User_Data.csv', 'Download Report'), unsafe_allow_html=True)
 
                 # Admin Side Data
-                # query = 'select * from user_data;'
-                # plot_data = pd.read_sql(query, connection)
-                plot_data = data
+                query = 'select * from user_data;'
+                plot_data = pd.read_sql(query, connection)
+                plot_data = pd.DataFrame(data)
 
                 # Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
