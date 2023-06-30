@@ -457,15 +457,19 @@ def run():
                 # plot_data = pd.DataFrame(data)
                 # st.write(plot_data)
 
-                # Pie chart for predicted field recommendations
+                Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
                 st.write(labels)
                 values = plot_data.Predicted_Field.value_counts()
-                values=values['count']
+                # values=values['count']
                 st.write(values)
+                d = to_1D(plot_data["Predicted_Field"]).value_counts()
+                d = pd.DataFrame({'Predicted-Fields': d.index, 'count': d.values})
                 st.subheader(
                     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
-                fig = px.pie(plot_data, values=values, names=labels,
+                # fig = px.pie(plot_data, values=values, names=labels,
+                #              title='Predicted Field 🎓 according to the Skills')
+                fig = px.pie(d,
                              title='Predicted Field 🎓 according to the Skills')
                 st.plotly_chart(fig)
 
