@@ -467,21 +467,21 @@ def run():
                 d = pd.DataFrame({'Predicted_Fields': d.index, 'count': d.values})
                 st.subheader(
                     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
-                # fig = px.pie(plot_data, values=values, names=labels,
+                # # fig = px.pie(plot_data, values=values, names=labels,
+                # #              title='Predicted Field 🎓 according to the Skills')
+                # # fig = px.pie(d,values='count', names='Predicted_Fields',
+                # #              title='Predicted Field 🎓 according to the Skills')
+                # values1 = plot_data.Predicted_Field.value_counts()
+                # fig = px.pie(values1, values='count', names='Predicted_Fields',
                 #              title='Predicted Field 🎓 according to the Skills')
-                # fig = px.pie(d,values='count', names='Predicted_Fields',
-                #              title='Predicted Field 🎓 according to the Skills')
-                values1 = plot_data.Predicted_Field.value_counts()
-                fig = px.pie(values1, values='count', names='Predicted_Fields',
-                             title='Predicted Field 🎓 according to the Skills')
-                st.plotly_chart(fig)
+                # st.plotly_chart(fig)
 
-                labels = plot_data.User_level.unique()
-                values = plot_data.User_level.value_counts()
-                st.subheader("📈 **Pie-Chart for User's 💼 Experienced Level**")
-                fig = px.pie(df, values=values, names=labels,
-                             title="Pie-Chart📈 for User's 💼 Experienced Level")
-                st.plotly_chart(fig)
+                # labels = plot_data.User_level.unique()
+                # values = plot_data.User_level.value_counts()
+                # st.subheader("📈 **Pie-Chart for User's 💼 Experienced Level**")
+                # fig = px.pie(df, values=values, names=labels,
+                #              title="Pie-Chart📈 for User's 💼 Experienced Level")
+                # st.plotly_chart(fig)
 
                 #labels = plot_data.resume_score.unique()
                 #values = plot_data.resume_score.value_counts()
