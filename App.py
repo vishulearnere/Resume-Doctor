@@ -460,9 +460,11 @@ def run():
                 #Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
                 st.write(labels)
+                st.write(type(labels))
                 values = plot_data.Predicted_Field.value_counts()
                 # values=values['count']
                 st.write(values)
+                st.write(type(values))
                 # d = to_1D(plot_data["Predicted_Field"]).value_counts()
                 # d = pd.DataFrame({'Predicted_Fields': d.index, 'count': d.values})
                 st.subheader(
