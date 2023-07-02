@@ -523,7 +523,7 @@ def run():
                     
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                    fig = px.pie( df_value_counts, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
 
@@ -552,7 +552,7 @@ def run():
                     
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                    fig = px.pie( df_value_counts, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
                     # st.subheader(
@@ -584,7 +584,7 @@ def run():
                     
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                    fig = px.pie( df_value_counts, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
                     # st.subheader(
@@ -622,7 +622,7 @@ def run():
                     
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                    fig = px.pie( df_value_counts, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
                     
@@ -656,7 +656,7 @@ def run():
                     
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                    fig = px.pie( df_value_counts, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
 
