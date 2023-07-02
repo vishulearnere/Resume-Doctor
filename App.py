@@ -459,21 +459,20 @@ def run():
 
                 #Pie chart for predicted field recommendations
                 labels = plot_data.Predicted_Field.unique()
-                st.write(labels)
-                st.write(type(labels))
+                # st.write(labels)
+                # st.write(type(labels))
                 values = plot_data.Predicted_Field.value_counts()
-                # values=values['count']
-                st.write(values)
-                st.write(type(values))
+                # st.write(values)
+                # st.write(type(values))
                 df_value_counts = pd.DataFrame(values)
                 df_value_counts = df_value_counts.reset_index()
                 df_value_counts.columns = ['Predicted_Fields', 'count']
-                fig = px.pie(df_value_counts,values='count', names='Predicted_Fields',
-                             title='Predicted Field 🎓 according to the Skills')
                 # d = to_1D(plot_data["Predicted_Field"]).value_counts()
                 # d = pd.DataFrame({'Predicted_Fields': d.index, 'count': d.values})
-                # st.subheader(
-                #     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
+                st.subheader(
+                    "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
+                fig = px.pie(df_value_counts,values='count', names='Predicted_Fields',
+                             title='Predicted Field 🎓 according to the Skills')
                 # fig = px.pie(plot_data, values=values, names=labels,
                 #              title='Predicted Field 🎓 according to the Skills')
                 # # fig = px.pie(d,values='count', names='Predicted_Fields',
@@ -488,9 +487,12 @@ def run():
 
                 labels = plot_data.User_level.unique()
                 values = plot_data.User_level.value_counts()
-                st.subheader("📈 **Pie-Chart for User's 💼 Experienced Level**")
-                fig = px.pie(df, values=values, names=labels,
-                             title="Pie-Chart📈 for User's 💼 Experienced Level")
+                df_value_counts = pd.DataFrame(values)
+                df_value_counts = df_value_counts.reset_index()
+                df_value_counts.columns = ['User_Experience_Level', 'count']
+                st.subheader("📈 **Pie-Chart for User's 💼 Experience Level**")
+                fig = px.pie(df, values='count', names='User_Experience_Level',
+                             title="Pie-Chart📈 for User's 💼 Experience Level")
                 st.plotly_chart(fig)
 
                 #labels = plot_data.resume_score.unique()
