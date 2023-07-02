@@ -517,9 +517,13 @@ def run():
                                   'Web Development']
                     labels = d.User_level.unique()
                     values = d.User_level.value_counts()
+                    df_value_counts = pd.DataFrame(values)
+                    df_value_counts = df_value_counts.reset_index()
+                    df_value_counts.columns = ['User_Experience_Level', 'count']
+                    
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values=values, names=labels,
+                    fig = px.pie(d, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
 
@@ -542,11 +546,20 @@ def run():
                                   'Android Development']
                     labels = d.User_level.unique()
                     values = d.User_level.value_counts()
+                    df_value_counts = pd.DataFrame(values)
+                    df_value_counts = df_value_counts.reset_index()
+                    df_value_counts.columns = ['User_Experience_Level', 'count']
+                    
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values=values, names=labels,
+                    fig = px.pie(d, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
+                    # st.subheader(
+                    #     "📈 **Pie-Chart for User's 💼 Experienced Level**")
+                    # fig = px.pie(d, values=values, names=labels,
+                    #              title="Pie-Chart for User's 💼 Experienced Level")
+                    # st.plotly_chart(fig)
 
                     st.subheader(
                         "📈 **bar-Chart for for User's 🎯 Resume Score**")
@@ -565,11 +578,20 @@ def run():
                     d = plot_data[plot_data.Predicted_Field == 'Data Science']
                     labels = d.User_level.unique()
                     values = d.User_level.value_counts()
+                    df_value_counts = pd.DataFrame(values)
+                    df_value_counts = df_value_counts.reset_index()
+                    df_value_counts.columns = ['User_Experience_Level', 'count']
+                    
                     st.subheader(
-                        "📈 **Pie-Chart for User's 💼 Experience Level**")
-                    fig = px.pie(d, values=values, names=labels,
-                                 title="Pie-Chart for User's 💼 Experience Level")
+                        "📈 **Pie-Chart for User's 💼 Experienced Level**")
+                    fig = px.pie(d, values='count', names='User_Experience_Level',
+                                 title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
+                    # st.subheader(
+                    #     "📈 **Pie-Chart for User's 💼 Experience Level**")
+                    # fig = px.pie(d, values=values, names=labels,
+                    #              title="Pie-Chart for User's 💼 Experience Level")
+                    # st.plotly_chart(fig)
 
                     st.subheader(
                         "📈 **Bar-Chart for for User's 🎯 Resume Score**")
@@ -589,11 +611,21 @@ def run():
                                   'IOS Development']
                     labels = d.User_level.unique()
                     values = d.User_level.value_counts()
+                    # st.subheader(
+                    #     "📈 **Pie-Chart for User's 💼 Experienced Level**")
+                    # fig = px.pie(d, values=values, names=labels,
+                    #              title="Pie-Chart for User's 💼 Experienced Level")
+                    # st.plotly_chart(fig)
+                    df_value_counts = pd.DataFrame(values)
+                    df_value_counts = df_value_counts.reset_index()
+                    df_value_counts.columns = ['User_Experience_Level', 'count']
+                    
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values=values, names=labels,
+                    fig = px.pie(d, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
+                    
 
                     st.subheader(
                         "📈 **bar-Chart for for User's 🎯 Resume Score**")
@@ -613,9 +645,18 @@ def run():
                                   'UI-UX Development']
                     labels = d.User_level.unique()
                     values = d.User_level.value_counts()
+                    # st.subheader(
+                    #     "📈 **Pie-Chart for User's 💼 Experienced Level**")
+                    # fig = px.pie(d, values=values, names=labels,
+                    #              title="Pie-Chart for User's 💼 Experienced Level")
+                    # st.plotly_chart(fig)
+                    df_value_counts = pd.DataFrame(values)
+                    df_value_counts = df_value_counts.reset_index()
+                    df_value_counts.columns = ['User_Experience_Level', 'count']
+                    
                     st.subheader(
                         "📈 **Pie-Chart for User's 💼 Experienced Level**")
-                    fig = px.pie(d, values=values, names=labels,
+                    fig = px.pie(d, values='count', names='User_Experience_Level',
                                  title="Pie-Chart for User's 💼 Experienced Level")
                     st.plotly_chart(fig)
 
