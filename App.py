@@ -465,12 +465,17 @@ def run():
                 # values=values['count']
                 st.write(values)
                 st.write(type(values))
+                df_value_counts = pd.DataFrame(values)
+                df_value_counts = df_value_counts.reset_index()
+                df_value_counts.columns = ['Predicted_Fields', 'count']
+                fig = px.pie(d,values='count', names='Predicted_Fields',
+                             title='Predicted Field 🎓 according to the Skills')
                 # d = to_1D(plot_data["Predicted_Field"]).value_counts()
                 # d = pd.DataFrame({'Predicted_Fields': d.index, 'count': d.values})
-                st.subheader(
-                    "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
-                fig = px.pie(plot_data, values=values, names=labels,
-                             title='Predicted Field 🎓 according to the Skills')
+                # st.subheader(
+                #     "📈 **Pie-Chart for Predicted Field 🎓 according to the Skills**")
+                # fig = px.pie(plot_data, values=values, names=labels,
+                #              title='Predicted Field 🎓 according to the Skills')
                 # # fig = px.pie(d,values='count', names='Predicted_Fields',
                 # #              title='Predicted Field 🎓 according to the Skills')
                 # values1 = plot_data.Predicted_Field.value_counts()
