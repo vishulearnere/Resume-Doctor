@@ -491,7 +491,7 @@ def run():
                 df_value_counts = df_value_counts.reset_index()
                 df_value_counts.columns = ['User_Experience_Level', 'count']
                 st.subheader("📈 **Pie-Chart for User's 💼 Experience Level**")
-                fig = px.pie(df, values='count', names='User_Experience_Level',
+                fig = px.pie(df_value_counts, values='count', names='User_Experience_Level',
                              title="Pie-Chart📈 for User's 💼 Experience Level")
                 st.plotly_chart(fig)
 
