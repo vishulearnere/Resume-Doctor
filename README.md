@@ -11,6 +11,15 @@
 
 <img src="https://raw.githubusercontent.com/vishulearnere/Resume-Doctor/main/SRA_Logo.png">
 
+
+**Resume Doctor** is a web- app which is designed to help users extract information from their uploaded resumes and provide them with career recommendations based on their skills and experience level. <br> <br>
+Resume Doctor App has two sections:- User’s & Admin Section <br>
+- User's section:-
+    - It also provides resume-writing tips and suggestions to help users improve their resumes. The project also provides a resume score which helps users understand how well their resume is written. The courses recommendations feature helps users find courses that are relevant to their skills and experience level. The skills recommendations feature helps users find skills that are relevant to their career goals. The youtube video recommendations feature helps users find videos that are relevant to their career goals.
+
+- Admin Section:- 
+    - The admin section of the project provides features such as fetching user’s data who have uploaded their resumes from a remote server and displaying it. It also allows the admin to download the user's data in CSV format. The analysis of all user’s data features provides insights into the predicted domain, experience level, resume score, and tech skills of all users.
+
 ## Source
 
 - Extracting user's information from the Resume, I used [PyResparser](https://omkarpathak.in/pyresparser/).
